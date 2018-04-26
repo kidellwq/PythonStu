@@ -53,8 +53,92 @@
 # # 打印Lisa:
 # print(L[2][2])
 
+#条件判断
+# age = 3
+# if age>=18:
+	# print("Your age is", age)
+	# print("adult")
+# elif age>=6:
+	# print("teenager")
+# else:
+	# print("kid")
+#input()的返回值是str，不能和整数相比，必须转化为int（）类型	
+# s = input("birth:")
+# birth=int(s)
+# if birth<200:
+	# print('00前')
+# else:
+	# print('00后')
+	
+# 练习
 
+# 小明身高1.75，体重80.5kg。请根据BMI公式（体重除以身高的平方）帮小明计算他的BMI指数，并根据BMI指数：
+# 低于18.5：过轻
+# 18.5-25：正常
+# 25-28：过重
+# 28-32：肥胖
+# 高于32：严重肥胖
+# 用if-elif判断并打印结果：
+# height = float(input("请输入您的身高："))
+# weight = float(input("请输入您的体重："))
+# bmi = float(weight/(height**2))
+# if bmi < 18.5:
+	# print("过轻")
+# elif bmi <25 and bmi >18.5:
+	# print("正常")
+# elif bmi <28 and bmi >25:	
+	# print("过重")
+# elif bmi <32 and bmi >28:	
+	# print("肥胖")
+# else:	
+	# print("严重肥胖")
 
+#循环,for x in ...把每个元素带入x循环
+# names = ['Michael', 'Bob', 'Tracy']
+# for name in names:
+	# print(name)
+#range()函数可以生成一个整数序列，list（）函数可以把他转换为列表
+#list(range(5))
+#0到100 的累加
+# sum = 0
+# for x in range(101):
+	# sum = sum+x
+# print(sum)
+#while循环
+# sum = 0
+# n = 99
+# while n>0:
+	# sum = sum+n
+	# n=n-2
+# print(sum)
+# 练习
+# 请利用循环依次对list中的每个名字打印出Hello, xxx!：
+#L = ['Bart', 'Lisa', 'Adam']
+# for x in L:
+	# print("Hello,",x)
+# n = 0
+# while n<len(L):
+	# print("Hello,",L[n])
+	# n= n+1
+#break跳出while循环
+# n=1
+# while n<=100:
+	# if n>10:
+		# break
+	# print(n)
+	# n=n+1
+# print('END')
+#continue跳出本次循环，开始下次循环
+# n = 0
+# while n<100:
+	# n=n+1
+	# if n%2 == 0:
+		# continue
+	# print(n)
+
+#dict字典，键值对，无序的
+d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+d['Adam'] = 67
 
 
 
